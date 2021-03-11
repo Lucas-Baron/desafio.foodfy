@@ -70,3 +70,18 @@ article{
     margin-top: 66px;
     margin-left: 50px;
 }
+
+
+/*== Footer ==*/
+footer{
+    height: 62px;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h6{
+    font-size: 14px;
+    color: #999999;
+}
