@@ -5,6 +5,7 @@
     font-family: "Roboto", sans-serif;
 }
 
+
 header{
     display: flex;
     align-items: center;
@@ -32,5 +33,40 @@ header{
 
 /*== Article ==*/
 article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article{
+    display: flex;
     background-color: #FBDFDB;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+}
+
+.text{
+    flex: 1;
+    text-align: justify;
+    margin: auto auto auto 60px;    
+}
+
+.text h3{
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text p{
+    max-width: 316px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.chef{
+    flex: 1;
+    margin-top: 66px;
+    margin-left: 50px;
 }
