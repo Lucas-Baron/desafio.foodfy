@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    width: 940px;
+    height: 90px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header img{
+    margin-right: 124px;
+}
+
+.header a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+}
+
+/*== Article ==*/
+article{
+    background-color: #FBDFDB;
+}
