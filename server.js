@@ -30,5 +30,5 @@
     })
 
     server.get('/recipes', function(req, res){
-        return res.render('recipes')
+        return res.render('recipes', {items: recipes})
     })

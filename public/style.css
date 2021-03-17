@@ -222,3 +222,68 @@ footer h6{
     opacity: 1;
     visibility: visible;
 }
+
+/*== Recipes ==*/
+.container_recipes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipes_img img{
+    width: 940px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.recipes_title{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.recipes_title p{
+    opacity: 0.8;
+}
+
+.recipes_ingredients{
+    width: 940px;
+    margin-bottom: 50px;
+}
+
+.recipes_ingredients h3{
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.recipes_ingredients a{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.recipes_list{
+    max-width: 940px;
+    margin-bottom: 50px;
+}
+
+.recipes_list.active{
+    display: none;
+}
+
+.recipes_list ul{
+    list-style-position: inside;
+}
+
+.recipes_list ul{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.recipes_ingredients p{
+    font-size: 18px;
+    line-height: 28px;
+}
