@@ -1,5 +1,6 @@
     const express = require('express')
     const nunjucks = require('nunjucks')
+    
 
     const server = express()
     const recipes = require('./data')
@@ -9,7 +10,9 @@
     server.set('view engine', 'njk')
 
     nunjucks.configure('views', {
-        express: server
+        express: server,
+        autoescape: false,
+        noCache: true
     })
 
     server.listen(3000, function(){
@@ -18,11 +21,11 @@
 
 //Rotas
     server.get('/', function(req, res){
-        return res.render('index', {items: recipes})
+        return res.render('index', {recipes: recipes})
     })
 
     server.get('/receitas', function(req, res){
-        return res.render('receitas', {items: recipes})
+        return res.render('receitas', {recipes: recipes})
     })
 
     server.get('/sobre', function(req, res){
@@ -30,5 +33,11 @@
     })
 
     server.get('/recipes', function(req, res){
-        return res.render('recipes', {items: recipes})
+        return res.render('recipes', {recipes: recipes})
+    })
+
+    server.get('/recipes/:index', function(req, res){
+        const recipeIndex = req.params.index
+
+        return res.render('recipes', {recipes: recipes[recipeIndex]})
     })
