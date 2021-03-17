@@ -270,7 +270,7 @@ footer h6{
     margin-bottom: 50px;
 }
 
-.recipes_list.active{
+.recipes_list_ul.active{
     display: none;
 }
 

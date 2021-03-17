@@ -5,20 +5,33 @@
 
     for (let card of cards){
         card.addEventListener("click", function(){
-            const textH2 = card.getAttribute('p')
 
-            const imageId = card.getAttribute('id')
             modalOverlay.classList.add('active')
-
-            modalOverlay.querySelector('img').src = `/assets/${imageId}`
-
-
-            modalOverlay.querySelector('h2').innerHTML = `${textH2}`
 
         })
     }
 
-    document.querySelector('.modal-close').addEventListener("click", function(){
-        modalOverlay.classList.remove('active')
-    })
 
+    const buttons = document.querySelectorAll('#buttom') 
+
+
+    for (let buttom of buttons){
+        buttom.addEventListener('click', function(){
+                if (buttom.innerHTML == 'Mostrar') {
+                    buttom.innerHTML = 'Esconder';
+                } else {
+                    buttom.innerHTML = 'Mostrar'
+                }
+        })
+
+    }
+
+
+
+    function ocultar(id){
+        if ( document.getElementById(id).style.display == 'none'){
+        document.getElementById(id).style.display = 'block';
+        }else { document.getElementById(id).style.display = 'none';
+        }
+    }
+    
