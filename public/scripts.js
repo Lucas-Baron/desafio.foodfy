@@ -9,28 +9,41 @@
         )}
     
   
+        const buttomIng = document.getElementById("buttomIng")
+        const buttomPre = document.getElementById("buttomPre")
+        const buttomInf = document.getElementById("buttomInf")
+
+        const txt1 = document.querySelector('.txt1')
+        const txt2 = document.querySelector('.txt2')
+        const txt3 = document.querySelector('.txt3')
 
 
-    const buttons = document.querySelectorAll('#buttom') 
-
-
-    for (let buttom of buttons){
-        buttom.addEventListener('click', function(){
-                if (buttom.innerHTML == 'Mostrar') {
-                    buttom.innerHTML = 'Esconder'
-                } else {
-                    buttom.innerHTML = 'Mostrar'
-                }
-        })
-
-    }
-
-
-
-    function ocultar(id){
-        if ( document.getElementById(id).style.display == 'none'){
-        document.getElementById(id).style.display = 'block';
-        }else { document.getElementById(id).style.display = 'none';
+        buttomIng.addEventListener("click", () => {
+        if (buttomIng.innerText == "ESCONDER") {
+            txt1.classList.add("txtactive")
+            buttomIng.innerText = "mostrar"
+        } else {
+            txt1.classList.remove("txtactive")
+            buttomIng.innerText = "esconder"
         }
-    }
+    })
     
+    buttomPre.addEventListener("click", () => {
+        if (buttomPre.innerText == "ESCONDER") {
+            txt2.classList.add("txtactive")
+            buttomPre.innerText = "mostrar"
+        } else {
+            txt2.classList.remove("txtactive")
+            buttomPre.innerText = "esconder"
+        }
+    })
+    
+    buttomInf.addEventListener("click", () => {
+        if (buttomInf.innerText == "ESCONDER") {
+            txt3.classList.add("txtactive")
+            buttomInf.innerText = "mostrar"
+        } else {
+            txt3.classList.remove("txtactive")
+            buttomInf.innerText = "esconder"
+        }
+    })

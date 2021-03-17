@@ -18,37 +18,44 @@
 
                 <div class="recipes_list">
 
-                    <h3>Ingredientes <a id="buttom" onclick=`ocultar('txt1')`> esconder </a></h3>
+                    <h3>Ingredientes <a id="buttomIng"> esconder </a></h3>
 
-                    {% for ingredient in recipes.ingredients %}
-                        <ul class="recipes_list_ul" id="txt1">
-                            <li> {{ingredient}} </li>                       
-                        </ul>
-                    {% endfor %}
+                    <div class="txt1">
+                        {% for ingredient in recipes.ingredients %}
+                            <ul class="recipes_list_ul">
+                                <li> {{ingredient}} </li>                       
+                            </ul>
+                        {% endfor %}
+                    </div>
+
 
                 </div>
 
 
                 <div class="recipes_list" >
 
-                    <h3>Modo de preparo <a id="buttom" onclick=`ocultar('txt2')`> esconder </a></h3>
-                                            
-                        {% for preparation in recipes.preparation %}
-                            <ul class="recipes_list_ul" id="txt2">
-                                <li>{{ preparation }}</li>
-                            </ul>
-                        {% endfor %}                   
+                    <h3>Modo de preparo <a id="buttomPre"> esconder </a></h3>
+
+                        <div class="txt2">       
+                            {% for preparation in recipes.preparation %}
+                                <ul class="recipes_list_ul"">
+                                    <li>{{ preparation }}</li>
+                                </ul>
+                            {% endfor %} 
+                        </div>                  
                                             
                 </div>
 
 
                 <div class="recipes_list">
 
-                    <h3> Informações adicionais <a id="buttom" onclick=`ocultar('txt3')`> esconder </a></h3>
+                    <h3> Informações adicionais <a id="buttomInf"> esconder </a></h3>
 
-                    <p id="txt3">
-                        {{recipes.information}}
-                    </p>
+                    <div class="txt3">
+                        <p>
+                            {{recipes.information}}
+                        </p>
+                    </div>
                 </div>
 
 

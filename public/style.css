@@ -287,3 +287,15 @@ footer h6{
     font-size: 18px;
     line-height: 28px;
 }
+
+.txt1.txtactive{
+    display: none;
+}
+
+.txt2.txtactive{
+    display: none;
+}
+
+.txt3.txtactive{
+    display: none;
+}
